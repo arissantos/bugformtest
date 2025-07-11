@@ -84,14 +84,14 @@
         - /url: /contact-us
 - heading "CHALLENGE - Spot the BUGS!" [level=2]
 - text: This page contains at least 15 bugs. How many of them can you spot? First Name
-- textbox "First Name": Darren Kuhn
+- textbox "First Name": Cristina Bednar
 - text: Last Name*
 - textbox "Last Name* Phone nunber* Country"
 - text: "Note: All the fields marked with * are mandatory Phone nunber*"
-- textbox "Enter phone number": "329241116393"
+- textbox "Enter phone number": "801673801940"
 - text: "Phone length validation: at least 10 digits Country"
 - combobox:
-  - option "Select a country..." [selected]
+  - option "Select a country..."
   - option "Afghanistan"
   - option "Albania"
   - option "Algeria"
@@ -247,7 +247,7 @@
   - option "Netherlands (Holland, Europe)"
   - option "Nevis"
   - option "New Caledonia"
-  - option "New Zealand"
+  - option "New Zealand" [selected]
   - option "Nicaragua"
   - option "Niger"
   - option "Nigeria"
@@ -339,11 +339,13 @@
   - option "Zambia"
   - option "Zimbabwe"
 - text: Email address*
-- textbox "Enter email"
+- textbox "Enter email": Glen53@gmail.com
 - text: Password*
-- textbox "Password"
+- textbox "Password": o0th2CaSUMcV
 - text: "Psw length validation: [6,20] characters"
 - checkbox "I agree with the terms and conditions" [disabled]
 - text: I agree with the terms and conditions
 - button "Register"
+- alert: Successfully registered the following information
+- text: "First Name: Cristina Bednar Last Name: Phone Number: 801673801941 Country: New Zealand Email: Glen53@gmail.com"
 ```
