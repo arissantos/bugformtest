@@ -1,0 +1,23 @@
+{
+  "name": "bugformtest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arissantos/bugformtest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arissantos/bugformtest/issues"
+  },
+  "homepage": "https://github.com/arissantos/bugformtest#readme",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.54.1"
+  }
+}
