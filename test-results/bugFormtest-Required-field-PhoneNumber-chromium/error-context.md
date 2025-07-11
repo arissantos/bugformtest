@@ -1,0 +1,350 @@
+# Page snapshot
+
+```yaml
+- navigation:
+  - heading "QA Practice" [level=3]:
+    - link "QA Practice":
+      - /url: /
+  - list:
+    - listitem:
+      - link "Ecommerce - Login, Add to Cart, Submit order, Logout":
+        - /url: /auth_ecommerce
+    - listitem:
+      - link "Spot the BUGS CHALLENGE":
+        - /url: /bugs-form
+    - listitem:
+      - link "GraphQL Testing":
+        - /url: /graphql-testing
+    - listitem:
+      - link "API Testing":
+        - /url: /api-testing
+    - listitem:
+      - link "Products List - Shop":
+        - /url: /products_list
+    - listitem:
+      - link "Intercept API Request":
+        - /url: /fetch-api
+    - listitem:
+      - link "Visual Testing - GIF Page":
+        - /url: /visual
+    - listitem:
+      - link "Forms":
+        - /url: "#homeSubmenu"
+    - listitem:
+      - link "Buttons":
+        - /url: "#pageSubmenu"
+    - listitem:
+      - link "New Tab / Window":
+        - /url: "#browserSubmenu"
+    - listitem:
+      - link "Btn actions":
+        - /url: "#actionsSubmenu"
+    - listitem:
+      - link "Tables":
+        - /url: "#tables"
+    - listitem:
+      - link "Dropdowns":
+        - /url: /dropdowns
+    - listitem:
+      - link "Iframes":
+        - /url: /iframe
+    - listitem:
+      - link "Alerts":
+        - /url: /alerts
+    - listitem:
+      - link "File Upload":
+        - /url: /file-upload
+    - listitem:
+      - link "Date Pickers":
+        - /url: /calendar
+    - listitem:
+      - link "Loader":
+        - /url: /loader
+    - listitem:
+      - link "Pagination":
+        - /url: /pagination
+  - list:
+    - listitem:
+      - link "RV - Website":
+        - /url: https://razvanvancea.ro/
+    - listitem:
+      - link "Let's connect - LinkedIn":
+        - /url: https://www.linkedin.com/in/razvanvancea/
+    - listitem:
+      - link "Learn with RV - YouTube":
+        - /url: https://youtube.com/learnwithrv
+- navigation:
+  - button
+  - list:
+    - listitem:
+      - link "Home":
+        - /url: /
+    - listitem:
+      - link "Contact":
+        - /url: /contact-us
+- heading "CHALLENGE - Spot the BUGS!" [level=2]
+- text: This page contains at least 15 bugs. How many of them can you spot? First Name
+- textbox "First Name": Marguerite Strosin
+- text: Last Name*
+- textbox "Last Name* Phone nunber* Country": Hyatt
+- text: "Note: All the fields marked with * are mandatory Phone nunber*"
+- textbox "Enter phone number"
+- text: "Phone length validation: at least 10 digits Country"
+- combobox:
+  - option "Select a country..."
+  - option "Afghanistan"
+  - option "Albania"
+  - option "Algeria"
+  - option "American Samoa"
+  - option "Andorra"
+  - option "Angola"
+  - option "Anguilla"
+  - option "Antigua & Barbuda"
+  - option "Argentina"
+  - option "Armenia"
+  - option "Aruba"
+  - option "Australia"
+  - option "Austria"
+  - option "Azerbaijan"
+  - option "Bahamas"
+  - option "Bahrain"
+  - option "Bangladesh"
+  - option "Barbados"
+  - option "Belarus"
+  - option "Belgium"
+  - option "Belize"
+  - option "Benin"
+  - option "Bermuda"
+  - option "Bhutan"
+  - option "Bolivia"
+  - option "Bonaire"
+  - option "Bosnia & Herzegovina"
+  - option "Botswana"
+  - option "Brazil"
+  - option "British Indian Ocean Ter"
+  - option "Brunei"
+  - option "Bulgaria"
+  - option "Burkina Faso"
+  - option "Burundi"
+  - option "Cambodia"
+  - option "Cameroon"
+  - option "Canada"
+  - option "Canary Islands"
+  - option "Cape Verde"
+  - option "Cayman Islands"
+  - option "Central African Republic"
+  - option "Chad"
+  - option "Channel Islands"
+  - option "Chile"
+  - option "China"
+  - option "Christmas Island"
+  - option "Cocos Island"
+  - option "Colombia"
+  - option "Comoros"
+  - option "Congo"
+  - option "Cook Islands"
+  - option "Costa Rica"
+  - option "Cote DIvoire"
+  - option "Croatia"
+  - option "Cuba"
+  - option "Curacao"
+  - option "Cyprus"
+  - option "Czech Republic"
+  - option "Denmark"
+  - option "Djibouti"
+  - option "Dominica"
+  - option "Dominican Republic"
+  - option "East Timor"
+  - option "Ecuador"
+  - option "Egypt"
+  - option "El Salvador"
+  - option "Equatorial Guinea"
+  - option "Eritrea"
+  - option "Estonia"
+  - option "Ethiopia"
+  - option "Falkland Islands"
+  - option "Faroe Islands"
+  - option "Fiji"
+  - option "Finland"
+  - option "France"
+  - option "French Guiana"
+  - option "French Polynesia"
+  - option "French Southern Ter"
+  - option "Gabon"
+  - option "Gambia"
+  - option "Georgia"
+  - option "Germany"
+  - option "Ghana"
+  - option "Gibraltar"
+  - option "Great Britain"
+  - option "Greece"
+  - option "Greenland"
+  - option "Grenada"
+  - option "Guadeloupe"
+  - option "Guam"
+  - option "Guatemala"
+  - option "Guinea"
+  - option "Guyana"
+  - option "Haiti"
+  - option "Hawaii"
+  - option "Honduras"
+  - option "Hong Kong"
+  - option "Hungary"
+  - option "Iceland"
+  - option "Indonesia"
+  - option "India"
+  - option "Iran"
+  - option "Iraq"
+  - option "Ireland"
+  - option "Isle of Man"
+  - option "Israel"
+  - option "Italy"
+  - option "Jamaica"
+  - option "Japan"
+  - option "Jordan"
+  - option "Kazakhstan"
+  - option "Kenya"
+  - option "Kiribati"
+  - option "Korea North"
+  - option "Korea South"
+  - option "Kuwait"
+  - option "Kyrgyzstan"
+  - option "Laos"
+  - option "Latvia"
+  - option "Lebanon"
+  - option "Lesotho"
+  - option "Liberia"
+  - option "Libya"
+  - option "Liechtenstein"
+  - option "Lithuania"
+  - option "Luxembourg"
+  - option "Macau"
+  - option "Macedonia"
+  - option "Madagascar"
+  - option "Malaysia"
+  - option "Malawi"
+  - option "Maldives"
+  - option "Mali"
+  - option "Malta"
+  - option "Marshall Islands"
+  - option "Martinique"
+  - option "Mauritania"
+  - option "Mauritius"
+  - option "Mayotte"
+  - option "Mexico"
+  - option "Midway Islands"
+  - option "Moldova"
+  - option "Monaco"
+  - option "Mongolia"
+  - option "Montserrat"
+  - option "Morocco"
+  - option "Mozambique"
+  - option "Myanmar"
+  - option "Nambia"
+  - option "Nauru"
+  - option "Nepal"
+  - option "Netherland Antilles"
+  - option "Netherlands (Holland, Europe)"
+  - option "Nevis"
+  - option "New Caledonia"
+  - option "New Zealand"
+  - option "Nicaragua"
+  - option "Niger"
+  - option "Nigeria"
+  - option "Niue"
+  - option "Norfolk Island"
+  - option "Norway"
+  - option "Oman" [selected]
+  - option "Pakistan"
+  - option "Palau Island"
+  - option "Palestine"
+  - option "Panama"
+  - option "Papua New Guinea"
+  - option "Paraguay"
+  - option "Peru"
+  - option "Philippines"
+  - option "Pitcairn Island"
+  - option "Poland"
+  - option "Portugal"
+  - option "Puerto Rico"
+  - option "Qatar"
+  - option "Republic of Montenegro"
+  - option "Republic of Serbia"
+  - option "Reunion"
+  - option "Romania"
+  - option "Russia"
+  - option "Rwanda"
+  - option "St Barthelemy"
+  - option "St Eustatius"
+  - option "St Helena"
+  - option "St Kitts-Nevis"
+  - option "St Lucia"
+  - option "St Maarten"
+  - option "St Pierre & Miquelon"
+  - option "St Vincent & Grenadines"
+  - option "Saipan"
+  - option "Samoa"
+  - option "Samoa American"
+  - option "San Marino"
+  - option "Sao Tome & Principe"
+  - option "Saudi Arabia"
+  - option "Senegal"
+  - option "Seychelles"
+  - option "Sierra Leone"
+  - option "Singapore"
+  - option "Slovakia"
+  - option "Slovenia"
+  - option "Solomon Islands"
+  - option "Somalia"
+  - option "South Africa"
+  - option "Spain"
+  - option "Sri Lanka"
+  - option "Sudan"
+  - option "Suriname"
+  - option "Swaziland"
+  - option "Sweden"
+  - option "Switzerland"
+  - option "Syria"
+  - option "Tahiti"
+  - option "Taiwan"
+  - option "Tajikistan"
+  - option "Tanzania"
+  - option "Thailand"
+  - option "Togo"
+  - option "Tokelau"
+  - option "Tonga"
+  - option "Trinidad & Tobago"
+  - option "Tunisia"
+  - option "Turkey"
+  - option "Turkmenistan"
+  - option "Turks & Caicos Is"
+  - option "Tuvalu"
+  - option "Uganda"
+  - option "United Kingdom"
+  - option "Ukraine"
+  - option "United Arab Emirates"
+  - option "United States of America"
+  - option "Uruguay"
+  - option "Uzbekistan"
+  - option "Vanuatu"
+  - option "Vatican City State"
+  - option "Venezuela"
+  - option "Vietnam"
+  - option "Virgin Islands (Brit)"
+  - option "Virgin Islands (USA)"
+  - option "Wake Island"
+  - option "Wallis & Futana Is"
+  - option "Yemen"
+  - option "Zaire"
+  - option "Zambia"
+  - option "Zimbabwe"
+- text: Email address*
+- textbox "Enter email": Marshall_Wiegand@hotmail.com
+- text: Password*
+- textbox "Password": rGSj_HPVcRei
+- text: "Psw length validation: [6,20] characters"
+- checkbox "I agree with the terms and conditions" [disabled]
+- text: I agree with the terms and conditions
+- button "Register"
+- alert: The phone number should contain at least 10 characters!
+```
