@@ -61,10 +61,7 @@ test('Required field: Lastname', async ({ page }) => {
 
   // Check notification message
   await expect(notification).toBeVisible();
-  // await expect(notification).toHaveText("Missing Lastname");
-  if ((await notification.textContent()) === "Successfully registered the following information") {
-    console.log("Notification message should be 'Missing Lastname'");
-  }
+  await expect(notification).toHaveText("Missing Lastname");
 });
 test('Required field: PhoneNumber', async ({ page }) => {
   const bugForm = await user(page)
@@ -86,10 +83,7 @@ test('Required field: PhoneNumber', async ({ page }) => {
 
   // Check notification message
   await expect(notification).toBeVisible();
-  // await expect(notification).toHaveText("Missing PhoneNumber");
-  if ((await notification.textContent()) === "Successfully registered the following information") {
-    console.log("Notification message should be 'Missing PhoneNumber'");
-  }
+  await expect(notification).toHaveText("Missing PhoneNumber");
 });
 test('PhoneNumber: Should only allow number', async ({ page }) => {
   const bugForm = await user(page)
@@ -111,10 +105,8 @@ test('PhoneNumber: Should only allow number', async ({ page }) => {
 
   // Check notification message
   await expect(notification).toBeVisible();
-  // await expect(notification).toHaveText("Invalid PhoneNumber");
-  if ((await notification.textContent()) === "Successfully registered the following information") {
-    console.log("Notification message should be 'Invalid PhoneNumber'");
-  }
+  await expect(notification).toHaveText("Invalid PhoneNumber");
+
 });
 test('PhoneNumber: Should not be less than 10 digits', async ({ page }) => {
   const bugForm = await user(page)
@@ -140,10 +132,8 @@ test('PhoneNumber: Should display correct field name', async ({ page }) => {
   const notification = page.locator('#message');
   // Fill in the form fields
   const phoneNumberField = page.getByText('Phone nunber*');
-  // await expect(phoneNumberField).toHaveText("Phone number*");
-  if ((await phoneNumberField.textContent()) === "Phone nunber*") {
-    console.log(" Phone Number field should be 'Phone number*'");
-  }
+  await expect(phoneNumberField).toHaveText("Phone number*");
+
 });
 
 test('Required field: Email Address', async ({ page }) => {
@@ -166,10 +156,8 @@ test('Required field: Email Address', async ({ page }) => {
 
   // Check notification message
   await expect(notification).toBeVisible();
-  // await expect(notification).toHaveText("Missing Email Address");
-  if ((await notification.textContent()) === "Successfully registered the following information") {
-    console.log("Notification message should be 'Missing Email Address'");
-  }
+  await expect(notification).toHaveText("Missing Email Address");
+
 });
 test('Email Address: Should have @ sign ', async ({ page }) => {
   const bugForm = await user(page)
@@ -190,10 +178,8 @@ test('Email Address: Should have @ sign ', async ({ page }) => {
   }
   // Check notification message
   await expect(notification).toBeVisible();
-  // await expect(notification).toHaveText("Invalid Email Address");
-  if ((await notification.textContent()) === "Successfully registered the following information") {
-    console.log("Notification message should be 'Invalid Email Address'");
-  }
+  await expect(notification).toHaveText("Invalid Email Address");
+
 
 });
 test('Required: Checkbox', async ({ page }) => {
@@ -217,10 +203,7 @@ test('Required: Checkbox', async ({ page }) => {
 
   // Check notification message
   await expect(notification).toBeVisible();
-  // await expect(notification).toHaveText("I agree with the terms and conditions checkbox is required");
-  if ((await notification.textContent()) === "Successfully registered the following information") {
-    console.log("Notification message should be 'I agree with the terms and conditions checkbox is required'");
-  }
+  await expect(notification).toHaveText("I agree with the terms and conditions checkbox is required");
 
 });
 test('Password: Should not be less than 6 characters  ', async ({ page }) => {
