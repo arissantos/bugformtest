@@ -63,6 +63,30 @@ test('Required field: Lastname', async ({ page }) => {
   await expect(notification).toBeVisible();
   await expect(notification).toHaveText("Missing Lastname");
 });
+
+test('Lastname: Should have correct locator name', async ({ page }) => {
+  const bugForm = await user(page)
+  const notification = page.locator('#message');
+
+  // Fill in the form fields
+  await page.getByRole('textbox', { name: 'First Name' }).fill(bugForm.fname)
+  await page.getByRole('textbox', { name: 'Last Name*' }).fill(bugForm.lname)
+  await page.getByRole('textbox', { name: 'Enter phone number' }).fill(bugForm.pNumber)
+  await page.locator('#countries_dropdown_menu').selectOption(bugForm.country);
+  await page.getByRole('textbox', { name: 'Enter email' }).fill(bugForm.emailAddress)
+  await page.getByRole('textbox', { name: 'Password' }).fill(bugForm.password)
+  await page.getByRole('button', { name: 'Register' }).click();
+  const checkbox = page.getByRole('checkbox', { name: 'I agree with the terms and' });
+  if (await checkbox.isEnabled()) {
+    await checkbox.check();
+  } else {
+    console.error('Checkbox is disabled');
+  }
+
+  // Check notification message
+  await expect(notification).toBeVisible();
+  await expect(notification).toHaveText("Successfully registered the following information");
+});
 test('Required field: PhoneNumber', async ({ page }) => {
   const bugForm = await user(page)
   const notification = page.locator('#message');
@@ -254,4 +278,9 @@ test('Password: Should not be more than 20 characters  ', async ({ page }) => {
   // Check notification message
   await expect(notification).toBeVisible();
   await expect(notification).toHaveText("The password should contain between [6,20] characters!");
+});
+test('Password: Should have correct info text', async ({ page }) => {
+  const bugForm = await user(page)
+  const pwHelp = page.locator('#pwHelp');
+  await expect(pwHelp).toHaveText("Password length validation: [6,20] characters");
 });
